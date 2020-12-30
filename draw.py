@@ -84,9 +84,9 @@ def startDraw():
     _image.save("D:\Desktop\captcha1.png", dpi=(300, 300))
 
     __img = Image.open("D:\Desktop\captcha1.png").convert('LA')
-    __img.save('greyscale.png')
+    __img.save('D:\Desktop\greyscale.png')
 
-    __image = cv2.imread("greyscale.png")
+    __image = cv2.imread("D:\Desktop\greyscale.png")
     rsz = cv2.resize(__image, None, fx=1, fy=1,
                      interpolation=cv2.INTER_CUBIC)
 
